@@ -1,0 +1,7 @@
+services:
+  app:
+    build: .
+    ports:
+      - "5400:5400"
+    volumes:
+      - ./src:/usr/src/app/src
