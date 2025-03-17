@@ -24,6 +24,10 @@ app.get('/soglasie_na_obrabotku_personalnyh_dannyh.pdf', (req, res) => {
     res.sendFile(join(__dirname, 'pdfs', 'soglasie_na_obrabotku_personalnyh_dannyh.pdf'));
 });
 
+app.get('/cookies.pdf', (req, res) => {
+    res.sendFile(join(__dirname, 'pdfs', 'cookies.pdf'));
+});
+
 // Запускаем сервер
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
