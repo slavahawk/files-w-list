@@ -3,5 +3,6 @@ services:
     build: .
     ports:
       - "5400:5400"
+    restart: always
     volumes:
       - ./src:/usr/src/app/src
